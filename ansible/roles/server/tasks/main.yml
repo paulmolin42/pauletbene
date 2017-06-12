@@ -17,10 +17,10 @@
   with_items: server.packages
   when: server.packages is defined
 
-- name: Create symlinks for extra packages
-  file: src={{ item.path }} dest={{ item.dest }} state=link
-  with_items: server.symlinks
-  when: server.symlinks is defined
+#- name: Create symlinks for extra packages
+#  file: src={{ item.path }} dest={{ item.dest }} state=link
+#  with_items: server.symlinks
+#  when: server.symlinks is defined
 
 - name: Configure the timezone
   sudo: yes
