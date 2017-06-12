@@ -1,0 +1,15 @@
+<header class="site-header">
+    <div class="header-background">
+        <h1>Paul et Bénédicte</h1>
+    </div>
+    <br/>
+    <div class="navigation-menu">
+        <a class="button{% if active|default('index') == 'index' %} active{% endif %}" href="{{ path('default_index') }}">Accueil</a>
+        <a class="button{% if active|default('index') == 'nuptial-mass' %} active{% endif %}" href="{{ path('default_nuptial_mass') }}">Messe de mariage</a>
+        <a class="button{% if active|default('index') == 'reception' %} active{% endif %}" href="{{ path('default_reception') }}">Réception</a>
+        <a class="button{% if active|default('index') == 'response-form' %} active{% endif %}" href="{{ path('default_response_form') }}">Formulaire de réponse</a>
+        <a class="button{% if active|default('index') == 'accommodation' %} active{% endif %}" href="{{ path('default_accommodation') }}">Hébergement</a>
+        <a class="button{% if active|default('index') == 'wedding-list' %} active{% endif %}" href="{{ path('default_wedding_list') }}">Liste de mariage</a>
+    </div>
+    <br/>
+</header>

@@ -1,13 +1,4 @@
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-
-# Email spool folder
-/app/spool/*
-
-# Cache, session files and logs (Symfony3)
+# Cache and logs (Symfony3)
 /var/cache/*
 /var/logs/*
 /var/sessions/*
@@ -17,10 +8,8 @@
 
 # Parameters
 /app/config/parameters.yml
-/app/config/parameters.ini
 
 # Managed by Composer
-/app/bootstrap.php.cache
 /var/bootstrap.php.cache
 /bin/*
 !bin/console
@@ -28,8 +17,12 @@
 /vendor/
 
 # Assets and user uploads
+/web/audio/
 /web/bundles/
-/web/uploads/
+/web/css/
+/web/images/
+/web/js/
+/web/pdf/
 
 # Assets managed by Bower
 /web/assets/vendor/
@@ -44,5 +37,13 @@
 # Composer PHAR
 /composer.phar
 
-# Backup entities generated with doctrine:generate:entities command
-*/Entity/*~
+# Npm
+/node_modules/
+
+# IDE
+.idea/*
+
+# Vagrant
+.vagrant/*
+
+/ubuntu-xenial-16.04-cloudimg-console.log

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% set active = 'reception' %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="home">
+            <h1>La réception</h1>
+            <p>À l'issue de la cérémonie religieuse, nous serons très heureux de vous retrouver au château de Champlâtreux, situé à quelques kilomètres de l'église St Côme St Damien.</p>
+            <h2>Pour y accéder</h2>
+            <div class="map">
+                <img src="{{ asset('images/plan_acces_1.gif') }}">
+                <p>Pour y accéder, depuis l'église St Côme St Damien :<br />
+                    Emprunter la rue St Damien pour sortir de Luzarches<br />
+                    Rejoindre la RD316 : le château se trouve à environ 3km de là, sur votre droite (suivre le panneau).<br />
+                    Pour vos GPS :<br />
+                    Château de Champlâtreux,<br />
+                    RD316<br />
+                    95270 EPINAY - CHAMPLÂTREUX
+                </p>
+            </div>
+            <h2>Historique du château</h2>
+            <p>Situé au cœur du pays de France, le Domaine de Champlâtreux a été constitué à partir de 1515 par la famille Avrillot (illustrée par la Sainte Madame Acharie), puis racheté en 1614 par la famille Molé, parlementaires originaires de Troyes en Champagne. Appartenant à la noblesse de robe, les Molé occupèrent les plus hautes fonctions de l’Ancien Régime à la fin de la Restauration. Ils donnèrent au Château ses dimensions actuelles.<br />
+                Le dernier du nom, Mathieu-Louis Comte Molé fut Ministre sous l’Empire et Premier Ministre du Roi Louis-Philippe qui tint Conseil dans le Château en 1838. Le Domaine entra dans la famille Noailles sous le Second Empire, par le mariage de la petite fille du Comte Molé avec le duc Jules de Noailles.</p>
+            <p>Le Château de Champlâtreux a été construit de 1751 à 1757 par Jean-Baptiste Molé Président à Mortier (l’une des plus hautes charges du Parlement de Paris) qui venait d’épouser la fille de Samuel Bernard, financier de Louis XIV puis de Louis XV. Il s’adressa à Jean-Michel Chevotet, architecte réputé pour ses belles demeures et favori de l’aristocratie (il construisit entre autres le Pavillon de Marsan à Paris et le Château de Beloeil en Belgique). C’est l’un des derniers exemples de l’architecture classique du XVIIIè siècle, majestueuse sans excès.</p>
+            <p>Le Château a accueilli et inspiré des écrivains illustres comme Chateaubriand, intime du Comte Molé, et la poétesse Anna de Noailles qui y résida dans l’entre deux guerres.</p>
+            <p>Les salons, dont l’architecture et le volume avaient été naturellement conçus pour recevoir les fêtes de l’époque, s’ouvrent sur un vaste parc aux arbres centenaires. Les jardins ont été dessinés selon l’ordonnance classique par Chevotet puis agrémentés de certaines parties à l’anglaise, commandées vers 1830 aux frères Thouin célèbres paysagistes de l’époque.</p>
+            <img src="{{ asset('images/gravure035.jpg') }}" />
+        </div>
+    </div>
+{% endblock %}

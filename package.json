@@ -1,0 +1,26 @@
+{
+  "name": "pauletbene-front",
+  "version": "1.0.0",
+  "description": "Front app for Paul & Bene's wedding website",
+  "scripts": {
+    "build": "gulp",
+    "postinstall": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Molin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulmolin42/pauletbene/issues"
+  },
+  "homepage": "https://github.com/paulmolin42/pauletbene#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.8"
+  }
+}

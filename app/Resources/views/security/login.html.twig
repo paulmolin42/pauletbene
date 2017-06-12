@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <form action="{{ path('security_login_check') }}" method="post">
+        <div class="row">
+            {% if error %}
+                <div class="alert alert-danger">
+                    {{ error.messageKey|trans(error.messageData) }}
+                </div>
+            {% endif %}
+            <div class="six columns">
+                <label for="username">Nom d'utilisateur</label>
+                <input class="u-full-width" type="text" id="username" name="_username" value="{{ last_username }}" />
+            </div>
+            <div class="six columns">
+                <label for="password">Mot de passe</label>
+                <input class="u-full-width" type="password" id="password" name="_password" />
+            </div>
+            <br/>
+            <button class="button-primary" type="submit">Se connecter</button>
+        </div>
+    </form>
+{% endblock %}

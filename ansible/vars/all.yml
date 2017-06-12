@@ -1,0 +1,28 @@
+---
+server:
+    install: '1'
+    packages: [vim, git, htop, npm]
+    symlinks:
+      - { path: '/usr/bin/nodejs', dest: '/usr/bin/node' }
+    timezone: Europe/Paris
+    locale: fr_FR.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: default, ip: 10.0.0.14, memory: '1024', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
+nginx:
+    install: '1'
+    docroot: /var/www/pauletbene/current/web
+    servername: pauletbene.dev
+pgsql:
+    install: '1'
+    database: pauletbene
+    user: pauletbene
+    password: pauletbene
+    dump: ''
+php:
+    install: '1'
+    ppa: php
+    packages: [php-cli, php-intl, php-mcrypt, php-pgsql]
+composer:
+    install: '1'
+
