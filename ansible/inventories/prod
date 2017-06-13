@@ -1,0 +1,2 @@
+[production]
+pauletbenedicte.fr ansible_connection=ssh ansible_ssh_host=193.70.90.176 ansible_ssh_port=22 ansible_ssh_user=root

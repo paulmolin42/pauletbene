@@ -5,6 +5,7 @@
     - vars/all.yml
   roles:
     - server
+    - create_www_data_user
     - vagrant_local
     - nginx
     - pgsql
