@@ -119,3 +119,28 @@ img {
 video {
   width: 100%;
 }
+
+//FOOTER
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 $footer-height;
+}
+
+body > .container {
+  margin-bottom: $footer-height + $footer-margin-bottom;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: $footer-margin-bottom;
+  height: $footer-height;
+  width: 100%;
+  text-align: center;
+}
