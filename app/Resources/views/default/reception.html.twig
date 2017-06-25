@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% set active = 'reception' %}
+{% set mapUrl = 'https://www.google.fr/maps/place/Ch%C3%A2teau+de+Champl%C3%A2treux/@49.0993814,2.396855,14.43z/data=!4m5!3m4!1s0x47e64130adcab6ef:0xbc79d298fcec4ea3!8m2!3d49.0857332!4d2.4110757' %}
 
 {% block content %}
     <div class="wrapper">
@@ -9,7 +10,7 @@
             <p>À l'issue de la cérémonie religieuse, nous serons très heureux de vous retrouver au château de Champlâtreux, situé à quelques kilomètres de l'église St Côme St Damien.</p>
             <h2>Pour y accéder</h2>
             <div class="map">
-                <img src="{{ asset('images/plan_acces_1.gif') }}">
+                <a target="_blank" href="{{ mapUrl }}"><img src="{{ asset('images/plan_acces_1.gif') }}"></a>
                 <p>Pour y accéder, depuis l'église St Côme St Damien :<br />
                     Emprunter la rue St Damien pour sortir de Luzarches<br />
                     Rejoindre la RD316 : le château se trouve à environ 3km de là, sur votre droite (suivre le panneau).<br />

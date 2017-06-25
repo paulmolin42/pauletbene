@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% set active = 'nuptial-mass' %}
+{% set mapUrl = 'https://www.google.fr/maps/place/Paroisse+de+Luzarches/@49.1122259,2.4260595,17z/data=!3m1!4b1!4m5!3m4!1s0x47e646deb024b085:0xc28d1bd54cc797d0!8m2!3d49.1122224!4d2.4282482' %}
 
 {% block content %}
     <div class="wrapper">
@@ -9,7 +10,7 @@
             <p>Notre messe de mariage sera célébrée à 15h30 en l'église St Côme St Damien de Luzarches (Val d'Oise) par le Père Régis Lecourt.</p>
             <h2>Pour y accéder</h2>
             <div class="map">
-                <img src="{{ asset('images/Plan_chemin_eglise_luzarches.png') }}">
+                <a target="_blank" href="{{ mapUrl }}"><img src="{{ asset('images/Plan_chemin_eglise_luzarches.png') }}"></a>
                 <p>Pour y accéder :<br />
                     1 rue François de Ganay,<br />
                     95270 LUZARCHES<br />
