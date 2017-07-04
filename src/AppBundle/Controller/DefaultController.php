@@ -21,14 +21,6 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/formulaire-reponse", name="default_response_form")
-     */
-    public function responseFormAction()
-    {
-        return $this->render('default/responseForm.html.twig');
-    }
-
-    /**
      * @Route("/messe-de-mariage", name="default_nuptial_mass")
      */
     public function nuptialMassAction()
