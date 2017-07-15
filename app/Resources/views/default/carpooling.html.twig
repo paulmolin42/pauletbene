@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme form _self %}
+
+{%- block choice_widget_expanded -%}
+    <div {{ block('widget_container_attributes') }}>
+        {%- for child in form %}
+            <label>{{ child.vars.label }} {{ form_widget(child) -}}</label>
+        {% endfor -%}
+    </div>
+{%- endblock choice_widget_expanded -%}
+
+{% block content %}
+    <div class="wrapper">
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <input type="submit" value="Poster"
+               class="button button-primary" />
+        {{ form_end(form) }}
+
+        {% if topics is not empty %}
+        <ul>
+            {% for topic in topics %}
+                <li class="carpooling-topic">
+                    <a href="{{ path('default_carpooling_topic', {id: topic.id}) }}">
+                        <div>
+                            {{ topic.author }} a fait une
+                            {{ topic.offerOrRequest is constant('AppBundle\\Entity\\CarpoolingTopic::CARPOOLING_OFFER') ? 'proposition' : 'demande' }}
+                            de covoiturage le {{ topic.postedAt|date('d/m/Y', timezone='Europe/Paris') }}
+                            à {{ topic.postedAt|date('H:i', timezone='Europe/Paris') }}.
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+{% endblock %}

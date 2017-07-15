@@ -31,13 +31,13 @@
         {% include '::header.html.twig' %}
     {% endblock %}
     <div class="container">
-        {#{% for flash_message in app.session.flashBag.get('success') %}#}
-            {#<div class="alert alert-success alert-dismissible" role="alert">#}
-                {#<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>#}
-                {#{{ flash_message }}#}
-            {#</div>#}
-        {#{% endfor %}#}
-{##}
+        {% for flash_message in app.session.flashBag.get('success') %}
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                {{ flash_message }}
+            </div>
+        {% endfor %}
+
         {% block content %}
         {% endblock %}
     </div>
@@ -48,6 +48,6 @@
 {% block analytics %}
     {% include '::anaytics.html.twig' %}
 {% endblock %}
-{#{% block javascripts %}<script type="text/javascript" src="{{ asset('js/site.js') }}"></script>{% endblock %}#}
+{% block javascripts %}<script type="text/javascript" src="{{ asset('js/site.js') }}"></script>{% endblock %}
 </body>
 </html>

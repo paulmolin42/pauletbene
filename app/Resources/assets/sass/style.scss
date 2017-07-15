@@ -144,3 +144,85 @@ footer {
   width: 100%;
   text-align: center;
 }
+
+// CARPOOLING
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-dismissible {
+  padding-right: 35px;
+
+  .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+  }
+}
+
+.close {
+  height: 0;
+  border: 0;
+  width: auto;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+
+@mixin carpooling-topic() {
+  padding: 20px;
+  background-color: lighten($primary-color, 20%);
+  border-radius: 10px;
+}
+
+li.carpooling-topic {
+  list-style: none;
+
+  a {
+    color: darken($primary-color, 20%);
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: darken($primary-color, 30%);
+    }
+  }
+
+  div {
+    @include carpooling-topic();
+
+    &:hover, &:focus {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+}
+
+p.carpooling-topic {
+  @include carpooling-topic();
+  color: darken($primary-color, 20%);
+  font-size: 20px;
+}
+
+p.carpooling-message {
+  @include carpooling-topic();
+  color: darken($primary-color, 20%);
+}
+
+textarea {
+  width: 100%;
+}
