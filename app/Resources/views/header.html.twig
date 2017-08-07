@@ -10,6 +10,7 @@
         <a class="button{% if active|default('index') == 'accommodation' %} active{% endif %}" href="{{ path('default_accommodation') }}">Hébergement</a>
         <a class="button{% if active|default('index') == 'wedding-list' %} active{% endif %}" href="{{ path('default_wedding_list') }}">Liste de mariage</a>
         <a class="button{% if active|default('index') == 'carpooling' %} active{% endif %}" href="{{ path('default_carpooling') }}">Covoiturage</a>
+        <a class="button" href="{{ path('security_logout') }}">Se déconnecter</a>
     </div>
     <br/>
 </header>

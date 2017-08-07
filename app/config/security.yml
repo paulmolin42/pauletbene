@@ -24,6 +24,9 @@ security:
             guard:
                 authenticators:
                     - app.form_login_authenticator
+            logout:
+              path: /logout
+              target: /
 
     access_control:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
