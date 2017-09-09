@@ -25,7 +25,72 @@ class DefaultController extends Controller
      */
     public function nuptialMassAction()
     {
-        return $this->render('default/nuptialMass.html.twig');
+        $chants = [
+            [
+                'category' => 'Entrée',
+                'name'     => 'Que vienne ton Règne',
+                'url'      => 'https://www.youtube.com/watch?v=TaTDmFA5oEc',
+            ],
+            [
+                'category' => 'Kyrie',
+                'name'     => 'Messe de Saint Paul',
+                'url'      => 'https://www.youtube.com/watch?v=nAQtQBPv31E',
+            ],
+            [
+                'category' => 'Gloria',
+                'name'     => 'Messe de Saint Paul',
+                'url'      => 'https://www.youtube.com/watch?v=fHamkBtQ2zo',
+            ],
+            [
+                'category' => 'Psaume',
+                'name'     => 'Le Seigneur est ma Lumière et mon Salut',
+                'url'      => 'https://www.youtube.com/watch?v=HuUXRfxZNBY',
+            ],
+            [
+                'category' => 'Alleluia',
+                'name'     => 'Messe de Saint Paul',
+                'url'      => 'https://www.youtube.com/watch?v=6pkMFCMahcA',
+            ],
+            [
+                'category' => 'Chant à l\'Esprit Saint',
+                'name'     => 'Viens Esprit Saint, viens embraser nos cœurs',
+                'url'      => 'https://www.youtube.com/watch?v=Ny87InnoYck',
+            ],
+            [
+                'category' => 'Sanctus',
+                'name'     => 'Messe de Saint Paul',
+                'url'      => 'https://youtu.be/Lkvbs6MNPNE?t=50s',
+            ],
+            [
+                'category' => 'Anamnèse',
+                'name'     => 'Messe de Saint Paul',
+                'url'      => 'https://youtu.be/Lkvbs6MNPNE?t=1m45s',
+            ],
+            [
+                'category' => 'Agnus',
+                'name'     => 'Messe de Saint Paul',
+                'url'      => 'https://youtu.be/sKscHz_9Dqk',
+            ],
+            [
+                'category' => 'Chant de Communion',
+                'name'     => 'Venez, approchons-nous de la table du Christ',
+                'url'      => 'https://www.youtube.com/watch?v=lzlg3AsLoAI',
+            ],
+            [
+                'category' => 'Chant à la Vierge',
+                'name'     => 'Regarde l\'étoile',
+                'url'      => 'https://www.youtube.com/watch?v=0gAopdXol3A',
+            ],
+            [
+                'category' => 'Chant de sortie',
+                'name'     => 'Chantez avec moi le Seigneur',
+                'url'      => 'https://www.youtube.com/watch?v=4qkq2Pbbp5w',
+            ],
+        ];
+
+        return $this->render('default/nuptialMass.html.twig', [
+            'chants' => $chants,
+        ]);
     }
 
     /**

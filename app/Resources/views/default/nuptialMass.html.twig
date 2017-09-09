@@ -20,7 +20,13 @@
                 </p>
             </div>
             <h2>Liturgie</h2>
-            <p>En cours de réflexion, nous contacter en cas d'idée lumineuse !</p>
+            <ul>
+                {% for chant in chants %}
+                <li>
+                    <strong>{{ chant.category }}</strong> : <a href="{{ chant.url }}" target="_blank">{{ chant.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
             <h2>Historique de l'église</h2>
             <p>Classée Monument Historique en 1912, l'église St Côme St Damien de Luzarches témoigne par son chevet de cinq siècles d'architecture, du XIème au XVIème siècle.Construite sur un ancien édifice gallo-romain puis carolingien dédié à St Barthélémy, elle apparaît dès le VIIIème siècle sous le vocable de St Côme – St Damien, frères jumeaux, patrons des médecins.</p>
             <p>Saint Côme et saint Damien sont deux frères jumeaux, nés au IIIème siècle en Asie Mineure actuelle. Leur profession de médecin leur fournit l'occasion d'exercer un véritable apostolat. La grâce divine leur donna le don de guérisons miraculeuses : les aveugles recouvraient la vue, les boiteux marchaient droit, les sourds entendaient. Tout cela, ils le faisaient par pure charité, ne recevant jamais aucune rétribution.<br />
