@@ -32,11 +32,6 @@ class DefaultController extends Controller
                 'url'      => 'https://www.youtube.com/watch?v=TaTDmFA5oEc',
             ],
             [
-                'category' => 'Kyrie',
-                'name'     => 'Messe de Saint Paul',
-                'url'      => 'https://www.youtube.com/watch?v=nAQtQBPv31E',
-            ],
-            [
                 'category' => 'Gloria',
                 'name'     => 'Messe de Saint Paul',
                 'url'      => 'https://www.youtube.com/watch?v=fHamkBtQ2zo',
