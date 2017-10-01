@@ -77,6 +77,11 @@ class DefaultController extends Controller
                 'url'      => 'https://www.youtube.com/watch?v=0gAopdXol3A',
             ],
             [
+                'category' => 'Avant la sortie',
+                'name'     => 'Chant de la Promesse',
+                'url'      => 'https://youtu.be/qb0-BIfoTHI',
+            ],
+            [
                 'category' => 'Chant de sortie',
                 'name'     => 'Chantez avec moi le Seigneur',
                 'url'      => 'https://www.youtube.com/watch?v=4qkq2Pbbp5w',
