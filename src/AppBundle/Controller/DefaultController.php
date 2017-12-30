@@ -102,6 +102,14 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/photos", name="default_photographs")
+     */
+    public function photographsAction()
+    {
+        return $this->render('default/photographs.html.twig');
+    }
+
+    /**
      * @Route("/liste-de-mariage", name="default_wedding_list")
      */
     public function weddingListAction()

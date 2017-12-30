@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% set active = 'photographs' %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="home photos">
+            <h1>Photos</h1>
+            <p>
+                Vous pourrez trouver sur <a href="{{ shared_photos_link }}" target="_blank">ce lien</a> toutes les photos de la journée du 21 octobre.
+                N'hésitez pas à nous envoyer par mail toutes les photos que vous aurez prises, cela nous fera plaisir !
+            </p>
+            <div>
+                <div class="img-container">
+                    <img src="{{ asset('images/DSC_8107.jpg') }}">
+                </div>
+                <div class="img-container">
+                    <img src="{{ asset('images/DSC_8372.jpg') }}">
+                    <img src="{{ asset('images/DSC_8431.jpg') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

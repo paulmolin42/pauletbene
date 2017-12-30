@@ -94,6 +94,18 @@ img {
   width: 100%;
 }
 
+.img-container {
+  display: inline-block;
+
+  &:first-of-type {
+    width: 45%;
+  }
+
+  &:last-of-type {
+    width: 54%;
+  }
+}
+
 .come-damien-miracle {
   max-width: 500px;
   margin: 0 auto 2.5rem auto;
